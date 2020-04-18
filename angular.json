@@ -115,6 +115,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "prueba-frontend"
+    }
+  },
+  "defaultProject": "prueba-frontend",
+  "cli": {
+    "analytics": false
+  }
 }

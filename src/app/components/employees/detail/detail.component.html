@@ -1,0 +1,82 @@
+<div class="container">
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }">
+  </ngx-loading>
+
+  <form [formGroup]="employeeDetailForm">
+    <div class="form-group">
+      <label for="name">Nombres</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        aria-describedby="nameHelp"
+        placeholder="Nombres"
+        formControlName="name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="surname">Apellidos</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        aria-describedby="surnameHelp"
+        placeholder="Apellidos"
+        formControlName="surname"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="occupation">Ocupación</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        aria-describedby="occupationHelp"
+        placeholder="Ocupación"
+        formControlName="occupation"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Teléfono</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        aria-describedby="phoneHelp"
+        placeholder="Teléfono"
+        formControlName="phone"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="username">Nombre de Usuario</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        aria-describedby="usernameHelp"
+        placeholder="Nombre de Usuario"
+        formControlName="username"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        aria-describedby="emailHelp"
+        placeholder="Email"
+        formControlName="email"
+      />
+    </div>
+
+    <button (click)="save()" class="btn btn-primary" type="submit">
+      Actualizar
+    </button>
+  </form>
+</div>
